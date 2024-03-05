@@ -1,10 +1,19 @@
+import 'swiper';
+import '../node_modules/boxicons/css/boxicons.min.css';
+
 import './App.scss';
+
+import { BrowserRouter as Router} from 'react-router-dom';
+import Layout from './components/pages/Layout';
+import RouteComponent from './config/RouteComponent';
 
 function App() {
   return (
-    <div className="App">
-          Learn React
-    </div>
+    <Router>
+        <Layout>
+            <RouteComponent />
+        </Layout>
+    </Router>
   );
 }
 
